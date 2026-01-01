@@ -5,6 +5,7 @@ A console-based Checkers game written in Python, featuring a MinMax AI opponent 
 ## Features
 
 - **Console Rendering**: Uses Unicode box-drawing characters for a clean board display.
+- **Visual Enhancements**: Highlights the last move made (start and end squares) for better visibility.
 - **Efficient Updates**: Uses `bext` to update only changed parts of the board, preventing flickering.
 - **Game Modes**: Choose between Player vs Player or Player vs AI.
 - **Advanced AI**: Uses Iterative Deepening, Move Ordering, and a sophisticated Evaluation Function (Position, Safety, Structure) for strong gameplay.
@@ -52,6 +53,7 @@ The AI has been upgraded from a basic MinMax algorithm to a more robust engine f
     -   **Material**: Base value of pieces and Kings.
     -   **Positioning**: Rewards controlling the center.
     -   **Safety**: Penalizes pieces vulnerable to capture.
+4.  **Non-Deterministic Play**: Randomizes selection among equally good moves to provide a more varied and human-like opponent.
     -   **Structure**: Rewards keeping pieces connected (defending each other).
 
 ## Testing & Benchmarking

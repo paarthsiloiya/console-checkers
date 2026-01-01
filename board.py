@@ -12,12 +12,16 @@ class Piece:
     def make_king(self):
         self.king = True
 
-    def draw(self, x, y):
+    def draw(self, x, y, bg_color=None):
         try:
             bext.goto(x, y)
             symbol = KING_SYMBOL if self.king else PIECE_SYMBOL
             color = COLOR_RED if self.color == RED else COLOR_BLACK
-            print(f"{color}{symbol}{COLOR_RESET}", end='')
+            
+            if bg_color:
+                print(f"{bg_color}{color}{symbol}{COLOR_RESET}", end='')
+            else:
+                print(f"{color}{symbol}{COLOR_RESET}", end='')
         except:
             pass
 
@@ -26,6 +30,7 @@ class Board:
         self.board = []
         self.red_left = self.black_left = 12
         self.red_kings = self.black_kings = 0
+        self.last_move = None
         self.create_board()
 
     def create_board(self):
@@ -60,7 +65,10 @@ class Board:
             bext.goto(BOARD_OFFSET_X, BOARD_OFFSET_Y + row * 2 + 1)
             print(BOX_V, end='')
             for col in range(COLS):
-                bg_color = COLOR_BOARD_LIGHT if (row + col) % 2 == 0 else COLOR_BOARD_DARK
+                if self.last_move and ((row, col) == self.last_move[0] or (row, col) == self.last_move[1]):
+                    bg_color = COLOR_HIGHLIGHT
+                else:
+                    bg_color = COLOR_BOARD_LIGHT if (row + col) % 2 == 0 else COLOR_BOARD_DARK
                 
                 print(f"{bg_color}   {COLOR_RESET}", end='')
                 
@@ -82,7 +90,13 @@ class Board:
                 if piece != 0:
                     screen_x = BOARD_OFFSET_X + 1 + col * 4 + 1
                     screen_y = BOARD_OFFSET_Y + 1 + row * 2
-                    piece.draw(screen_x, screen_y)
+                    
+                    if self.last_move and ((row, col) == self.last_move[0] or (row, col) == self.last_move[1]):
+                        bg_color = COLOR_HIGHLIGHT
+                    else:
+                        bg_color = COLOR_BOARD_LIGHT if (row + col) % 2 == 0 else COLOR_BOARD_DARK
+                        
+                    piece.draw(screen_x, screen_y, bg_color)
 
     def update_piece_visual(self, row, col):
         screen_x = BOARD_OFFSET_X + 1 + col * 4 + 1
@@ -91,13 +105,29 @@ class Board:
         piece = self.board[row][col]
         
         bext.goto(screen_x - 1, screen_y)
-        bg_color = COLOR_BOARD_LIGHT if (row + col) % 2 == 0 else COLOR_BOARD_DARK
+        
+        if self.last_move and ((row, col) == self.last_move[0] or (row, col) == self.last_move[1]):
+            bg_color = COLOR_HIGHLIGHT
+        else:
+            bg_color = COLOR_BOARD_LIGHT if (row + col) % 2 == 0 else COLOR_BOARD_DARK
+            
         print(f"{bg_color}   {COLOR_RESET}", end='')
         
         if piece != 0:
-            piece.draw(screen_x, screen_y)
+            piece.draw(screen_x, screen_y, bg_color)
 
     def move(self, piece, row, col, visual=True):
+        if visual:
+            if self.last_move:
+                # Clear previous highlight
+                prev_start, prev_end = self.last_move
+                self.last_move = None
+                self.update_piece_visual(prev_start[0], prev_start[1])
+                self.update_piece_visual(prev_end[0], prev_end[1])
+            
+            # Set new highlight
+            self.last_move = ((piece.row, piece.col), (row, col))
+
         self.board[piece.row][piece.col], self.board[row][col] = self.board[row][col], self.board[piece.row][piece.col]
         
         if visual:

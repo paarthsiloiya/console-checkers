@@ -1,6 +1,7 @@
 from copy import deepcopy
 from constants import RED, BLACK, ROWS, COLS
 import time
+import random
 
 def evaluate_board(board):
     if board.winner() == BLACK:
@@ -47,6 +48,7 @@ def minimax(position, depth, alpha, beta, max_player, start_time, time_limit):
         maxEval = float('-inf')
         best_move = None
         moves = get_all_moves(position, BLACK)
+        random.shuffle(moves)
         moves.sort(key=lambda x: len(x[1][2]), reverse=True)
         
         for move, move_details in moves:
@@ -63,6 +65,7 @@ def minimax(position, depth, alpha, beta, max_player, start_time, time_limit):
         minEval = float('inf')
         best_move = None
         moves = get_all_moves(position, RED)
+        random.shuffle(moves)
         moves.sort(key=lambda x: len(x[1][2]), reverse=True)
         
         for move, move_details in moves:
