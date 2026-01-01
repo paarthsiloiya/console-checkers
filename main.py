@@ -3,7 +3,7 @@ import colorama
 from constants import *
 from board import Board
 from input_handler import get_player_move
-from ai import minimax
+from ai import iterative_deepening
 
 def draw_welcome_screen():
     bext.clear()
@@ -99,7 +99,7 @@ def main():
             bext.goto(0, input_line)
             print("AI is thinking...")
             
-            value, move_details = minimax(board, 3, float('-inf'), float('inf'), True)
+            move_details = iterative_deepening(board, True, time_limit=1.0)
             
             if move_details is None:
                 bext.goto(0, input_line)

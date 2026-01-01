@@ -1,0 +1,1002 @@
+[
+    {
+        "game_id": 1,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.01743149757385254,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 2,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.01662468910217285,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 3,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.017452239990234375,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 4,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.01921701431274414,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 5,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.021200180053710938,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 6,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.017896175384521484,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 7,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.01782989501953125,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 8,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.02194976806640625,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 9,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.01936507225036621,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 10,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.019737958908081055,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 11,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.017682313919067383,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 12,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.022348403930664062,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 13,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.02189469337463379,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 14,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.02172708511352539,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 15,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.021832704544067383,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 16,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.025777816772460938,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 17,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.024547576904296875,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 18,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.021153926849365234,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 19,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.021643877029418945,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 20,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.022580862045288086,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 21,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.02323603630065918,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 22,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.022534608840942383,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 23,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.023250341415405273,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 24,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.024942636489868164,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 25,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.0233914852142334,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 26,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.02112746238708496,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 27,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.020909547805786133,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 28,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.021959304809570312,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 29,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.019713878631591797,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 30,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.02120184898376465,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 31,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.022099018096923828,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 32,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.019984006881713867,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 33,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.021255016326904297,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 34,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.01928877830505371,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 35,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.019204378128051758,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 36,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.021594524383544922,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 37,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.02031254768371582,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 38,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.02246260643005371,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 39,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.02053523063659668,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 40,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.020367860794067383,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 41,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.0208280086517334,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 42,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.022919654846191406,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 43,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.021540403366088867,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 44,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.022664308547973633,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 45,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.021421194076538086,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 46,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.021837711334228516,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 47,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.022277116775512695,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 48,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.01992058753967285,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 49,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.021109819412231445,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 50,
+        "winner": "RED",
+        "moves": [
+            {
+                "turn": "RED",
+                "duration": 0.0214993953704834,
+                "move_count": 0
+            }
+        ],
+        "red_ai": "minimax",
+        "black_ai": "iterative_deepening"
+    },
+    {
+        "game_id": 51,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 52,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 53,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 54,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 55,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 56,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 57,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 58,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 59,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 60,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 61,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 62,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 63,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 64,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 65,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 66,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 67,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 68,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 69,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 70,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 71,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 72,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 73,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 74,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 75,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 76,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 77,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 78,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 79,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 80,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 81,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 82,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 83,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 84,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 85,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 86,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 87,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 88,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 89,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 90,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 91,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 92,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 93,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 94,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 95,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 96,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 97,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 98,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 99,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    },
+    {
+        "game_id": 100,
+        "winner": "BLACK",
+        "moves": [],
+        "red_ai": "iterative_deepening",
+        "black_ai": "minimax"
+    }
+]

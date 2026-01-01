@@ -97,8 +97,6 @@ def iterative_deepening(position, max_player, time_limit=1.0):
                 
     except TimeoutError:
         pass
-        
-    return best_move
 
 def simulate_move(piece, move, board, skip):
     board.move(piece, move[0], move[1], visual=False)

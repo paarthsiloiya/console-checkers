@@ -7,9 +7,10 @@ A console-based Checkers game written in Python, featuring a MinMax AI opponent 
 - **Console Rendering**: Uses Unicode box-drawing characters for a clean board display.
 - **Efficient Updates**: Uses `bext` to update only changed parts of the board, preventing flickering.
 - **Game Modes**: Choose between Player vs Player or Player vs AI.
-- **Smart AI**: Uses MinMax algorithm with Alpha-Beta pruning for efficient decision making.
+- **Advanced AI**: Uses Iterative Deepening, Move Ordering, and a sophisticated Evaluation Function (Position, Safety, Structure) for strong gameplay.
 - **Score Tracking**: Real-time display of remaining pieces for both players.
 - **Input Handling**: Intuitive algebraic notation (e.g., "C3 D4").
+- **Benchmarking Suite**: Includes tools to simulate games and analyze AI performance.
 
 ## Installation
 
@@ -18,6 +19,7 @@ A console-based Checkers game written in Python, featuring a MinMax AI opponent 
     ```bash
     pip install -r requirements.txt
     ```
+    *Note: For running the analysis notebook, you will also need `pandas`, `matplotlib`, `seaborn`, and `jupyter`.*
 
 ## How to Play
 
@@ -35,30 +37,40 @@ python main.py
 
 - `main.py`: Entry point, game loop, and UI.
 - `board.py`: Board representation, rendering logic, and move validation.
-- `ai.py`: MinMax algorithm with Alpha-Beta pruning.
+- `ai.py`: Production AI implementation (Iterative Deepening).
 - `input_handler.py`: User input parsing.
 - `constants.py`: Game constants and configuration.
+- `testing/`: Directory containing benchmarking tools and analysis notebooks.
 
-## Improving the MinMax AI
+## AI Implementation
 
-The current AI uses MinMax with Alpha-Beta pruning. Here are further ways to improve its intelligence:
+The AI has been upgraded from a basic MinMax algorithm to a more robust engine featuring:
 
-### 1. Enhanced Evaluation Function
-The current evaluation only counts pieces. A better function would consider:
-- **Positioning**: Pieces in the center and on the opponent's side are more valuable.
-- **Kings**: Kings are worth more than regular pieces (e.g., 1.5x or 2x).
-- **Mobility**: The number of legal moves available.
-- **Safety**: Penalize pieces that are vulnerable to capture.
-- **Structure**: Reward keeping pieces connected (defending each other).
+1.  **Iterative Deepening**: The AI searches deeper and deeper (Depth 1, 2, 3...) within a fixed time limit (default 1.0s), ensuring it always returns the best move found so far without hanging.
+2.  **Move Ordering**: Captures and promotions are evaluated first, allowing Alpha-Beta pruning to cut off bad branches significantly earlier.
+3.  **Enhanced Evaluation Function**:
+    -   **Material**: Base value of pieces and Kings.
+    -   **Positioning**: Rewards controlling the center.
+    -   **Safety**: Penalizes pieces vulnerable to capture.
+    -   **Structure**: Rewards keeping pieces connected (defending each other).
 
-### 2. Move Ordering
-Evaluate "promising" moves first (e.g., captures or promotions). This maximizes the effectiveness of Alpha-Beta pruning.
+## Testing & Benchmarking
 
-### 3. Iterative Deepening
-Instead of a fixed depth, start with depth 1, then 2, etc., until a time limit is reached. This ensures the AI always has a move ready.
+The project includes a comprehensive testing suite to validate AI improvements.
 
-### 4. Transposition Table
-Store the results of previously evaluated board states to avoid re-calculating them if reached via a different move order.
+### Running Benchmarks
+To simulate games between the Old AI (Baseline) and the New AI:
 
-### 5. Endgame Database
-For positions with few pieces, use a pre-calculated database to play perfectly.
+```bash
+python testing/benchmark.py
+```
+This will run 100 games (50 with New AI as Red, 50 as Black) and save the results to `benchmark_results.json`.
+
+### Analyzing Results
+Open `testing/analysis.ipynb` in VS Code or Jupyter Lab to view detailed statistics, including:
+- Win Rates
+- Move Time Distribution
+- Game Length Analysis
+- Phase Comparison (First vs Second player advantage)
+
+See `testing/TESTING.md` for more details on the methodology.
