@@ -83,3 +83,10 @@ Open `testing/analysis.ipynb` in VS Code or Jupyter Lab to view detailed statist
 - Phase Comparison (First vs Second player advantage)
 
 See `testing/TESTING.md` for more details on the methodology.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+*Happy Playing!*
