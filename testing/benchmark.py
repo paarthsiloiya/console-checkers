@@ -1,3 +1,11 @@
+"""
+Benchmark Module for Console Checkers AI.
+
+This module provides tools to benchmark the performance of the AI algorithms.
+It runs games between different AI versions or configurations and records
+metrics such as win rates, move times, and game lengths.
+"""
+
 import sys
 import os
 import time
@@ -8,10 +16,26 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from board import Board
 from constants import RED, BLACK
-import old_ai
-import new_ai
+from testing import old_ai
+from testing import new_ai
 
 def play_game(red_ai_func, black_ai_func, game_id):
+    """
+    Simulates a single game between two AI functions.
+
+    Args:
+        red_ai_func (function): The AI function for the RED player.
+        black_ai_func (function): The AI function for the BLACK player.
+        game_id (int): A unique identifier for the game.
+
+    Returns:
+        dict: A dictionary containing game statistics:
+            - game_id: The game identifier.
+            - winner: The color of the winner ('RED', 'BLACK', or 'DRAW').
+            - moves: A list of dictionaries detailing each move (turn, duration, move_count).
+            - red_ai: Name of the RED AI function.
+            - black_ai: Name of the BLACK AI function.
+    """
     board = Board()
     turn = RED
     move_count = 0
@@ -80,16 +104,18 @@ def play_game(red_ai_func, black_ai_func, game_id):
 
 def print_progress_bar(iteration, total, prefix='', suffix='', decimals=1, length=50, fill='█', printEnd="\r"):
     """
-    Call in a loop to create terminal progress bar
-    @params:
-        iteration   - Required  : current iteration (Int)
-        total       - Required  : total iterations (Int)
-        prefix      - Optional  : prefix string (Str)
-        suffix      - Optional  : suffix string (Str)
-        decimals    - Optional  : positive number of decimals in percent complete (Int)
-        length      - Optional  : character length of bar (Int)
-        fill        - Optional  : bar fill character (Str)
-        printEnd    - Optional  : end character (e.g. "\r", "\r\n") (Str)
+    Call in a loop to create terminal progress bar.
+
+    Args:
+        iteration (int): Current iteration.
+        total (int): Total iterations.
+        prefix (str, optional): Prefix string. Defaults to ''.
+        suffix (str, optional): Suffix string. Defaults to ''.
+        decimals (int, optional): Positive number of decimals in percent complete. Defaults to 1.
+        length (int, optional): Character length of bar. Defaults to 50.
+        fill (str, optional): Bar fill character. Defaults to '█'.
+        printEnd (str, optional): End character (e.g. "\\r", "\\r\\n"). Defaults to "\\r".
+
     """
     percent = ("{0:." + str(decimals) + "f}").format(100 * (iteration / float(total)))
     filledLength = int(length * iteration // total)

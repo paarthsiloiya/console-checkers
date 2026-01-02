@@ -1,6 +1,22 @@
+"""
+Input Handler Module for Console Checkers.
+
+This module is responsible for parsing and validating user input, converting
+algebraic notation (e.g., "A3") into board coordinates.
+"""
+
 from constants import ROWS, COLS
 
 def parse_position(pos_str):
+    """
+    Parses a position string (e.g., "A3") into row and column indices.
+
+    Args:
+        pos_str (str): The position string to parse.
+
+    Returns:
+        tuple or None: (row, col) if valid, None otherwise.
+    """
     if len(pos_str) < 2:
         return None
     
@@ -18,6 +34,18 @@ def parse_position(pos_str):
     return None
 
 def get_player_move(turn_color):
+    """
+    Prompts the player for a move and parses the input.
+
+    Args:
+        turn_color (int): The color of the current player (RED or BLACK).
+
+    Returns:
+        tuple or str or None: 
+            - (start_pos, end_pos) tuple if input is valid.
+            - 'QUIT' if the user wants to quit.
+            - None if the input format is invalid.
+    """
     color_name = "RED" if turn_color == 1 else "BLACK"
     
     try:

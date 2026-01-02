@@ -1,2 +1,4 @@
-colorama
+colorama>=0.4.6
 bext
+sphinx
+shibuya

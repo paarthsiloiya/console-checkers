@@ -1,3 +1,10 @@
+"""
+Main Module for Console Checkers.
+
+This is the entry point of the application. It handles the game loop,
+UI rendering, and high-level game logic (turns, win conditions, mode selection).
+"""
+
 import bext
 import colorama
 from constants import *
@@ -6,14 +13,15 @@ from input_handler import get_player_move
 from ai import iterative_deepening
 
 def draw_welcome_screen():
+    """Draws the ASCII art welcome screen and menu."""
     bext.clear()
     print(f"{COLOR_RED}" + "="*55)
-    print(f"{COLOR_RED}   _____ _               _                 ")
-    print(f"{COLOR_RED}  / ____| |             | |                ")
-    print(f"{COLOR_RED} | |    | |__   ___  ___| | _____ _ __ ___ ")
-    print(f"{COLOR_RED} | |    | '_ \ / _ \/ __| |/ / _ \ '__/ __|")
-    print(f"{COLOR_RED} | |____| | | |  __/ (__|   <  __/ |  \__ \\")
-    print(f"{COLOR_RED}  \_____|_| |_|\___|\___|_|\_\___|_|  |___/")
+    print(rf"{COLOR_RED}   _____ _               _                 ")
+    print(rf"{COLOR_RED}  / ____| |             | |                ")
+    print(rf"{COLOR_RED} | |    | |__   ___  ___| | _____ _ __ ___ ")
+    print(rf"{COLOR_RED} | |    | '_ \ / _ \/ __| |/ / _ \ '__/ __|")
+    print(rf"{COLOR_RED} | |____| | | |  __/ (__|   <  __/ |  \__ \\")
+    print(rf"{COLOR_RED}  \_____|_| |_|\___|\___|_|\_\___|_|  |___/")
     print(f"{COLOR_RED}" + "="*55 + f"{COLOR_RESET}")
     print("\nWelcome to Console Checkers!")
     print("1. Player vs Player")
@@ -21,10 +29,27 @@ def draw_welcome_screen():
     print("\nSelect mode (1 or 2): ", end='')
 
 def draw_score(board):
+    """
+    Draws the current score (remaining pieces) at the top of the screen.
+
+    Args:
+        board (Board): The current board state.
+    """
     bext.goto(BOARD_OFFSET_X, 0)
     print(f"{COLOR_RED}RED: {board.red_left} {KING_SYMBOL if board.red_kings > 0 else ''}   {COLOR_BLACK}BLACK: {board.black_left} {KING_SYMBOL if board.black_kings > 0 else ''}{COLOR_RESET}   ")
 
 def main():
+    """
+    The main game loop.
+
+    Handles:
+    - Game initialization
+    - Mode selection
+    - Turn management
+    - Input processing
+    - AI move execution
+    - Win/Loss detection
+    """
     bext.title('Console Checkers')
     draw_welcome_screen()
     
@@ -98,6 +123,7 @@ def main():
         else:
             bext.goto(0, input_line)
             print("AI is thinking...")
+            
             
             move_details = iterative_deepening(board, True, time_limit=1.0)
             
